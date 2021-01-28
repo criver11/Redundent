@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="toolkit.css">
+<style>
+    * {
+    font-family: monospace;
+}
+
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, var(--spsc-8)) repeat(10, 1fr);
+    grid-template-rows: 72px calc(100% - 72px);
+
+}
+
+.button-nav{
+    margin: var(--spsc-2);
+}
+
+\.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--spsc-8) * 2);
+}
+.profile-pic {
+    width: 64%;
+    height: 64%;
+    border-radius: 50%;
+}
+
+\.profile-bio {
+    padding: var(--spsc-4)
+}
+
+\.profile-bio li {
+    margin-left: var(--spsc-4)
+
+}
+</style>
+</head>
+<body>
+    
+    <main class="grid-container"> 
+        <nav class="cols-12 grid-container grid-align-right ln">
+            <div class="button-nav cols-2 ln">LOGO</div>
+            <div class="button-nav cols-2 ln">ABOUT</div>
+            <div class="button-nav cols-2 ln">CASE STUDIES</div>
+            <div class="cols-4"></div>
+            <div class="button-nav cols-2 ln">CONTACT</div>
+
+        </nav>
+<div class="panel-left cols-2 ln nl-top">
+    <div class="profile-pic-container ln">
+        <div class="heroImg ln"></div>
+    </div>
+    <div class="profile-bio">
+        <ul>
+            <h4>Colin Rivers</h4>
+            <li><strong>Kill Me</strong> Slowly </li>
+            <li><strong>Code</strong> Will be the death of me </li>
+
+                   
+           
+            
+
+        </ul>
+    </div>
+</div>
+
+<section class="content cols-10">
+    <h1 class="ln">Brain Dead.</h1>
+<h5>The grids make me crazy.</h5>
+<h6>It gets worse...</h6>
+
+<p>It’s time to finish the main page for your imaginary furniture store that you began in the previous
+    activity.
+    In this activity, you will add a second grid, both HTML and CSS, to your</p>
+
+</section>
+
+    </main>
+
+</body>
+</html>
