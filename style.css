@@ -17,6 +17,33 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+
+.button{
+
+}
+
+.burger {
+  display: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.line {
+  height: 2px;
+  width: 35px;
+  margin: 0.5rem 0;
+  background: #daf8e3;
+  transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+.contact {
+  background-color: #061E36;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
 .work{
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -41,8 +68,6 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.uxHeader{
-  grid-area: 2 / 2 / 2 / 2; }
 
 .workHeader{
   grid-area: 2 / 2 / 2 / 2; }
@@ -58,20 +83,22 @@ body {
   grid-area: 3 / 6 / 6 / 8; }
 .div4 { grid-area: 5 / 6 / 10 / 8; }
 .div5 { 
-  margin-top: -10;
+  margin-top: 100;
   grid-area: 2 / 2 / 12 / 7;
   
  }
- .div6{
+ \.div6{
    margin-top: 60px;
   margin-left: -20px;
   background-color: #E28444;
   border-radius: 85px;
   grid-area: 2 / 2 / 6 / 7;
  }
+.div8 {
+  grid-area: 4/ 9 / 5 / 12; 
 
+}
  #div5 {
-   height: 40%;
 
 
 
@@ -129,7 +156,30 @@ h5{
   Margin:0;
 
 }
+
+h6 {
+  margin-top: 10rem;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 94px;
+  color:#E28444;
+  Margin:0;
+}
+
+h7 {
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 94px;
+  color: #fffeed;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #E28444;
+  Margin:0;
+}
+
 hr{
+  width: 100%;
   border: 2px solid #E28444;
 }
 p {
@@ -142,7 +192,7 @@ p {
   margin: 0;
 
 }
-  .hero{
+  .hero {
     background-color: #fffeed;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -154,18 +204,28 @@ p {
     .hero1 { 
       grid-area: 1 / 6 / 7 / 13; 
     }
+    .hero2 { 
+      margin: 200px;
+      grid-area: 12 / 12 / 8 / 12; 
+    }
     .title1 { 
       grid-area: 4 / 2 / 6 / 7; 
     }
     .stars1 { 
       grid-area: 2 / 2 / 4 / 4; 
     }
+    .portfolioHeader {
+      grid-area: 1 / 2 / 4 / 4; 
+      z-index: 999
+      }
 
+  
+    
   #navbar {
     display: grid;
     min-height: 100px;
     grid-auto-flow: column;
-    background-color: #fffeed;
+    background-color: #061E36;
     grid-gap: 1.5em;
     padding: 0 40px;
     -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
@@ -201,7 +261,73 @@ p {
     grid-gap: 5em;
     font-family: "Open Sans", sans-serif;
   }
-  
+    
+    #links2 {
+      margin-right: 50px;
+      display: grid;
+      justify-content: right;
+      align-content: center;
+      grid-auto-flow: column;
+      grid-gap: 5em;
+      font-family: "Open Sans", sans-serif;
+      color: #fffeed;
+  }
+  .links2 {
+    color: #fffeed;
+  }
+
+  .primary {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #E28444;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border-color: #061E36;
+    background-color: #061E36;
+    margin-top: 50px;
+    height: 100px;
+    grid-area: 4/ 9 / 5 / 12; 
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    
+  }
+
+  .primary2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #061E36;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border-color: #E28444;
+    background-color:  #E28444;
+    margin-top: 50px;
+    height: 100px;
+    grid-area: 4/ 9 / 5 / 12; 
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  }
+  .tertiary {
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 94px;
+    color: #061E36;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border-color: #E28444;
+    background-color:  #E28444;
+    margin: 50px;
+    height:500px;
+    width: 100%;
+    grid-area: 10 / 2 / 10 / 7; 
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  }
   a {
     text-decoration: none;
     color: #333;
@@ -214,90 +340,59 @@ p {
   display: grid;
   min-height: 100px;
   grid-auto-flow: column;
-  background-color: #fffeed;
+  background-color:  #fffeed;;
   grid-gap: 1.5em;
   padding: 0 40px;
 }
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* =======================
-  ******* Mobile Menu ******
-  ========================*/
-  .mobile-menu {
+@media screen and (max-width: 600px) {
+  .burger {
     display: block;
-    list-style-type: none;
-    background-color: #fff;
-    float: right;
-    width: 150px;
-    padding: 5px 0 50px 0;
-    border: 1px solid #eee;
-    z-index: 55;
   }
+  .nav-links {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    height: 92vh;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #005582;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-links {
+    width: 60%;
+  }
+}
   
-  .mobile-links li {
-    line-height: 2.8rem;
-  }
-  
-  .mobile-btn {
-    display: grid;
-    justify-content: right;
-    align-content: center;
-    grid-auto-flow: column;
-    cursor: pointer;
-  }
-  
-  .nav-list {
-    font-family: "Open Sans", sans-serif;
-    list-style-type: none;
-  }
-  
-  .nav-list:hover {
-    opacity: 0.5;
-    cursor: pointer;
-  }
-  
-  /* Mobile to Tablet  */
-  @media (min-width: 320px) and (max-width: 767px) {
-    #links,
-    .mobile-menu {
-      display: none;
-    }
-  }
-  
-  /* Tablet to Desktop */
-  @media (min-width: 768px) {
-    .mobile-menu,
-    .mobile-btn,
-    .fa-bars {
-      display: none;
-    }
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
